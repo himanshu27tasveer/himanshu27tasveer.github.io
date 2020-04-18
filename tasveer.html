@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tasveer</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Himanshu Maahwar">
+        <meta name="description" content="Portfolio website of Himanshu mahawar">
+        <meta name="keywords" content="photography , black and white photography, monochrome photography, Himanshu mahawar, landscape photography, street photography, travel photography">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="tasveer.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        
+        <header>
+             <div class="logo" style="text-align: center;">
+                <img src="logo.png" alt="Tasveer">
+            </div>
+        </header>
+        
+        
+        <nav style="background-color: #414141;">
+            
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="tasveer.html">Home</a>
+                    <a href="#about" onclick="closeNav()" >About</a>
+                    <a href="HimanshuMahawar_InternshalaResume%20(1).pdf" target="_blank">Resume</a>
+                    <a href="photos.html" target="_blank">Photos</a>
+                    
+                    <a href="#contact" onclick="closeNav()">Contact</a>
+                    
+                        <p style="text-align: center;color: whitesmoke;">Himanshu Mahawar Photography is the registered trademark of Tasveer. <br>
+                         &copy; 2020 Tasveer. All Rights Reserved
+                        </p>
+                            <ul class="social-icons">
+                              <li><a class="facebook" href="https://www.facebook.com/himanshu27.stu"><i class="fa fa-facebook"></i></a></li>
+                              <li><a class="twitter" href="https://www.twitter.com/imhimanshu27"><i class="fa fa-twitter"></i></a></li>
+                              <li><a class="instagram" href="https://www.instagram.com/himanshu.tasveer/"><i class="fa fa-instagram"></i></a></li>
+                              <li><a class="linkedin" href="https://www.linkedin.com/in/himanshu-mahawar-b782809a/"><i class="fa fa-linkedin"></i></a>       </li>   
+                            </ul>
+            
+                </div>
+                
+            </div>
+            <div style=";font-size:30px;cursor:pointer;margin-top: 0px;vertical-align: middle;height: 50px;" onclick="openNav()"> <p style="text-align: center;">&#9776 </p> </div>
+            
+        </nav>
+        
+        <h1 style="background-color: whitesmoke;text-align: center;vertical-align:middle;position: sticky;top: 0;z-index: 2;opacity: 100%;border: solid;padding: 0;margin: 0;margin-bottom:3px;border-width: 1px; " id="mytitle" >Himanshu Mahawar Photography
+        </h1>
+        
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="slideshow/landscape.jpg" style="width:100%;height: 500px;">
+            <div class="text">&copy;Tasveer</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="slideshow/haridwar.jpg" style="width:100%;height: 500px;">
+            <div class="text">&copy;Tasveer</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="slideshow/mushrooms.jpg" style="width:100%;height: 500px;">
+            <div class="text">&copy;Tasveer</div>
+          </div>
+            
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="slideshow/kota.jpg" style="width:100%;height: 500px;">
+            <div class="text">&copy;Tasveer</div>
+          </div>
+            
+
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+         
+        </div>        
+        <article id="about">
+            
+            <h1>About</h1>
+            
+            <img src="20190410_074027-01%20(1).jpeg" alt="Avatar" class="avatar">
+            <br><br>
+                <p>Himanshu Mahawar is a landscape, street and Monochrome photographer. And he is doing engineering from NIT WARANGAL in Electronics and communication Engineering.
+                <br> He have got some experience in c++ and data structure and web development (HTML5, CSS3, Javascript, Bootstrap, php,mySql, flask, django, jquery).</p>
+            
+        </article>
+        <br><br><br><br>
+        
+        <article id="contact">
+            
+            <h1>Contact</h1>
+            
+            <div id="contactform">
+                
+                <form action="tasveer.ph" method="post" >
+                
+                    <p>
+                        <label for="name">Name : </label>
+                        
+                        <input type="text" name="sender" id="name" required placeholder="Full Name">
+                    </p>
+                    <br>
+                    <p>
+                        <label for="email">Email Id : </label>
+                       
+                        <input type="email" id="email" name="senderEmail" required placeholder="Enter your Email">
+                    </p>
+                    <br>
+                    <p>
+                        <label for="message">Message : </label>
+                       
+                        <textarea id="message" rows="100" cols="100" placeholder="Enter your Message here."></textarea>
+                        
+                        
+                    </p>
+                    <br><br>
+                    <input type="submit" name="submit">
+                    
+                    
+                  
+                </form>
+                
+            </div>
+            
+        </article>
+        
+        <br><br><br><br>
+        <div style="background-color: gray;">
+            <br>
+            <p style="text-align: center;">Himanshu Mahawar Photography is the registered trademark of Tasveer. <br>
+            &copy; 2020 Tasveer. All Rights Reserved
+            </p>
+            <div style="">
+                <ul class="social-icons">
+                  <li><a class="facebook" href="https://www.facebook.com/himanshu27.stu"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="https://www.twitter.com/imhimanshu27"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="instagram" href="https://www.instagram.com/himanshu.tasveer/"><i class="fa fa-instagram"></i></a></li>
+                  <li><a class="linkedin" href="https://www.linkedin.com/in/himanshu-mahawar-b782809a/"><i class="fa fa-linkedin"></i></a></li>   
+                </ul>
+                <br>
+            </div>
+            
+        </div>
+         
+        
+        <script>
+            function openNav() {
+              document.getElementById("myNav").style.width = "100%";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNav").style.width = "0%";
+            }
+        
+            //slide show
+           var slideIndex = 0;
+           showSlides();
+
+           function showSlides() {
+             var i;
+             var slides = document.getElementsByClassName("mySlides");
+             var dots = document.getElementsByClassName("dot");
+             for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+             }
+             slideIndex++;
+             if (slideIndex > slides.length) {slideIndex = 1}    
+             for (i = 0; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace(" active", "");
+             }
+             slides[slideIndex-1].style.display = "block";  
+             dots[slideIndex-1].className += " active";
+             setTimeout(showSlides, 4000); // Change image every 2 seconds
+           }
+            
+        </script>
+        
+    </body>
+    
+</html>
