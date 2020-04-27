@@ -10,6 +10,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="tasveer.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+        
+        <!-- BOOTSTRAP   -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        
     </head>
     <body>
         
@@ -57,27 +62,27 @@
         <div class="slideshow-container">
 
           <!-- Full-width images with number and caption text -->
-          <div class="mySlides fade">
+          <div class="mySlides ">
             <div class="numbertext">1 / 4</div>
-            <img src="slideshow/landscape.jpg" style="width:100%;height: 500px;">
+            <img src="slideshow/landscape.jpg" class="slideshow-img">
             <div class="text">&copy;Tasveer</div>
           </div>
 
-          <div class="mySlides fade">
+          <div class="mySlides ">
             <div class="numbertext">2 / 4</div>
-            <img src="slideshow/haridwar.jpg" style="width:100%;height: 500px;">
+            <img src="slideshow/haridwar.jpg" class="slideshow-img">
             <div class="text">&copy;Tasveer</div>
           </div>
 
-          <div class="mySlides fade">
+          <div class="mySlides ">
             <div class="numbertext">3 / 4</div>
-            <img src="slideshow/mushrooms.jpg" style="width:100%;height: 500px;">
+            <img src="slideshow/mushrooms.jpg" class="slideshow-img">
             <div class="text">&copy;Tasveer</div>
           </div>
             
-          <div class="mySlides fade">
+          <div class="mySlides ">
             <div class="numbertext">4 / 4</div>
-            <img src="slideshow/kota.jpg" style="width:100%;height: 500px;">
+            <img src="slideshow/kota.jpg" class="slideshow-img">
             <div class="text">&copy;Tasveer</div>
           </div>
             
@@ -93,57 +98,126 @@
           <span class="dot" onclick="currentSlide(4)"></span>
          
         </div>        
-        <article id="about">
+        <div class="container">
+            <article id="about">
             
-            <h1>About</h1>
-            
-            <img src="20190410_074027-01%20(1).jpeg" alt="Avatar" class="avatar">
-            <br><br>
-                <p>Himanshu Mahawar is a landscape, street and Monochrome photographer. And he is doing engineering from NIT WARANGAL in Electronics and communication Engineering.
-                <br> He have got some experience in c++ and data structure and web development (HTML5, CSS3, Javascript, Bootstrap, php,mySql, flask, django, jquery).</p>
-            
-        </article>
-        <br><br><br><br>
+                <p style="font-size:50px; ">About</p>
+                <br><br>
+                <img src="20190410_074027-01%20(1).jpeg" alt="Avatar" class="avatar">
+                <br><br><br><br><br><br><br><br><br><br>
+                    <p style="font-family: montserrat;font-size: 20px;">Himanshu Mahawar is a landscape, street and Monochrome photographer. And he is currently enrolled in Electronics and Communication Engineerng in NIT Warangal.
+                    <br>
+
+            </article>  
+        </div>
+        <br><br>
         
         <article id="contact">
             
-            <h1>Contact</h1>
-            
-            <div id="contactform">
-                
+            <div class="container border" style="background-color: lightgray;">
+                    <br><br><br><br>
 
-                <form action="mailto: himanshu27.stu@gmail.com?Subject=Message%20from%20site" method="post" >
+            <!--Section: Contact v.2-->
+            <section class="section">
 
-                <form action="mailto:himanshu27.stu@gmail.com?Subject=Message%20from%20Tasveer" enctype="text/plain" method="post" >
+                <!--Section heading-->
+                <h2 style="font-size: 50px;" class="section-heading h1 pt-4">Contact us</h2>
+                <!--Section description--><br><br>
+                <p class="section-description" style="font-size: 24px;">"People don't care how much you know until they know how much you care."</p>
+                <br><br>
 
-                
-                    <p>
-                        <label for="name">Name : </label>
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-8 col-xl-9">
+                        <form id ="contact-form" name="contact-form" action="mailto:himanshu27.stu@gmail.com" method="post" enctype="text/plain">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <div class="md-form">
+                                            <input type="text" id="name" name="name" class="form-control">
+                                            <label for="name" class="">Your name</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <div class="md-form">
+                                            <input type="text" id="email" name="email" class="form-control">
+                                            <label for="email" class="">Your email</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">Subject</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" class="md-textarea"></textarea>
+                                        <label for="message">Your message</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Grid row-->
+                            <div class="center-on-small-only">
+                                <input type="submit" name="submit" class="btn btn-primary">
+                            </div> 
+
+                        </form>
+
                         
-                        <input type="text" name="sender" id="name" required placeholder="Full Name">
-                    </p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
                     <br>
-                    <p>
-                        <label for="email">Email Id : </label>
-                       
-                        <input type="email" id="email" name="senderEmail" required placeholder="Enter your Email">
-                    </p>
-                    <br>
-                    <p>
-                        <label for="message">Message : </label>
-                       
-                        <textarea id="message" rows="100" cols="100" placeholder="Enter your Message here."></textarea>
-                        
-                        
-                    </p>
-                    <br><br>
-                    <input type="submit" name="submit">
-                    
-                    
-                  
-                </form>
-                
-            </div>
+                    <div class="col-md-4 col-xl-3">
+                        <ul class="contact-icons">
+                            <li><i class="fa fa-map-marker fa-2x"></i>
+                                <p>NIT Warangal, Telangana <br> Pin Code: 506004</p>
+                            </li>
+                            <br>
+
+                            <li><i class="fa fa-envelope fa-2x"></i>
+                                <p>himanshu27.stu@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+            </section>
+            <!--Section: Contact v.2--><br><br>
+
+        </div>
+
             
         </article>
         
@@ -195,7 +269,7 @@
              }
              slides[slideIndex-1].style.display = "block";  
              dots[slideIndex-1].className += " active";
-             setTimeout(showSlides, 4000); // Change image every 2 seconds
+             setTimeout(showSlides, 4000);
            }
             
         </script>
