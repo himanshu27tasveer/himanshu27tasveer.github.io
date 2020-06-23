@@ -1,2 +1,2 @@
-# Himanshu Mahawar Photography
+# Tasveer
 Portfolio Website of Himanshu Mahawar Photography
