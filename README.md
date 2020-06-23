@@ -1,2 +1,2 @@
-# himanshu27tasveer.github.io
+# Himanshu Mahawar Photography
 Portfolio Website of Himanshu Mahawar Photography
